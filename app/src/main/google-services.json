@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "213110882278",
+    "firebase_url": "https://grad-app-a4cda-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "grad-app-a4cda",
+    "storage_bucket": "grad-app-a4cda.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:213110882278:android:2c439a77afd395b6fc6027",
+        "android_client_info": {
+          "package_name": "com.example.grad_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "213110882278-ghltkk0fveppk57bu32nnlmil7l7bei4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEQO0ip_SpURmANkZ467K1d8Cpz_YkUTU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "213110882278-ghltkk0fveppk57bu32nnlmil7l7bei4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="5dp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/item_cl"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/notice_profile_pic"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:padding="3dp"
+            app:layout_constraintBottom_toTopOf="@id/notice_headline"
+            app:layout_constraintEnd_toStartOf="@id/notice_name_surname"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/empty_profile_pic" />
+
+        <TextView
+            android:id="@+id/notice_name_surname"
+            android:layout_width="300dp"
+            android:layout_height="25dp"
+            android:text="@string/name_surname"
+            android:textSize="15sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/notice_profile_pic"
+            app:layout_constraintBottom_toTopOf="@id/notice_message"
+            app:layout_constraintVertical_bias="0.0"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="2dp"/>
+
+        <LinearLayout
+            android:id="@+id/notice_cl_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toEndOf="@id/notice_profile_pic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/notice_name_surname"
+            app:layout_constraintBottom_toTopOf="@id/notice_cl_expiration_date"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="2dp"
+            >
+
+
+            <TextView
+                android:id="@+id/notice_t_date"
+                android:layout_width="150dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:text="@string/notice_date" />
+
+            <TextView
+                android:id="@+id/notice_t_date_fill"
+                android:layout_width="150dp"
+                android:layout_height="25dp"
+
+                android:text="@string/date" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/notice_cl_expiration_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toEndOf="@id/notice_profile_pic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/notice_cl_date"
+            app:layout_constraintBottom_toTopOf="@id/notice_cl_expiration_date"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="2dp">
+
+
+            <TextView
+                android:id="@+id/notice_t_expirationdate"
+                android:layout_width="150dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:text="@string/notice_expiration_date" />
+
+            <TextView
+                android:id="@+id/notice_t_expirationdate_fill"
+                android:layout_width="150dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:text="@string/date" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/notice_headline"
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="@string/headline"
+            app:layout_constraintTop_toBottomOf="@id/notice_profile_pic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/notice_message"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/notice_message"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:text="@string/unspecified"
+            app:layout_constraintTop_toBottomOf="@id/notice_headline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="20dp"
+            android:paddingStart="20dp"/>
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.cardview.widget.CardView>
